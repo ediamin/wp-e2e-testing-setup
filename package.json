@@ -4,15 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "node ./tests/e2e/run-tests.js"
+    "test:e2e": "wp-scripts test-e2e --config tests/e2e/jest.config.js"
   },
   "author": "",
   "license": "ISC",
   "private": true,
   "devDependencies": {
     "@wordpress/e2e-test-utils": "^4.9.0",
-    "@wordpress/scripts": "^11.0.0",
-    "dotenv": "^8.2.0",
-    "dotenv-expand": "^5.1.0"
+    "@wordpress/scripts": "^11.0.0"
   }
 }
