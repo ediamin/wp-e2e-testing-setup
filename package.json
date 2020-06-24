@@ -1,17 +1,25 @@
 {
-  "name": "foobar",
+  "name": "wp-e2e-testing-setup",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "wp-scripts test-e2e --config tests/e2e/jest.config.js"
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop",
+    "env:clean": "wp-env clean",
+    "env:run": "wp-env run",
+    "env:destroy": "wp-env destroy",
+    "test:e2e": "wp-scripts test-e2e --config tests/e2e/jest.config.js",
+    "lint:e2e": "wp-scripts lint-js tests/e2e"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "private": true,
   "devDependencies": {
     "@wordpress/e2e-test-utils": "^4.9.0",
     "@wordpress/env": "^1.5.0",
-    "@wordpress/scripts": "^11.0.0"
-  }
+    "@wordpress/scripts": "^11.0.0",
+    "prettier": "npm:wp-prettier@^2.0.5"
+  },
+  "dependencies": {}
 }
