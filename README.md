@@ -17,6 +17,10 @@ Make sure Docker is running and then run
 npm run env:start
 ```
 
+You'll have two WordPress setup. One is regular at http://localhost:8888 and other one is for testing http://localhost:8889.
+You can use the 8888 site as general purpose. For both admin user pass is `admin:password`.
+
+
 ### Stop env
 Stop Docker containers
 ```
